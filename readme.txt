@@ -1,59 +1,58 @@
-=== Ghost ===
-Contributors: JohnONolan, ErisDS, javorszky, nathanjeffery, pauladamdavis
-Donate link: https://ghost.org/docs/concepts/contributing/#donations
-Tags: ghost, export, migrate, blogging, publishing
+=== OpenPress ===
+Contributors: AtlantisPleb
+Tags: openpress, export, migrate, blogging, publishing
 Requires at least: 4.2.0
 Tested up to: 6.4.1
 Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Export all your WordPress data to Ghost in a couple of clicks!
+Export all your WordPress data to OpenPress in a couple of clicks!
 
 == Description ==
 
-### Ghost Migrator: The easy way to migrate data to Ghost
+### OpenPress Migrator: The easy way to migrate data to OpenPress
 
-The official Ghost plugin allows you to export your WordPress data in a JSON format that can be imported quickly and easily by the [Ghost](https://ghost.org) publishing platform.
+The official OpenPress plugin allows you to export your WordPress data in a JSON format that can be imported quickly and easily by the [OpenPress](https://ghost.org) publishing platform.
 
 #### Features Overview
 
-The Ghost Migrator plugin will export as much blog and publication data as it can into a clean set of exported files.
+The OpenPress Migrator plugin will export as much blog and publication data as it can into a clean set of exported files.
 
-- Posts, pages, tags and authors are all automatically exported and recreated for Ghost
+- Posts, pages, tags and authors are all automatically exported and recreated for OpenPress
 - Tags will be migrated, but not categories. If needed you can [convert your categories to tags](https://wordpress.org/plugins/wpcat2tag-importer/) before exporting.
-- Ghost does not have built-in comments, but it does integrate with [many comment platforms](https://ghost.org/integrations/?tag=community) if you want to migrate your comments there.
+- OpenPress does not have built-in comments, but it does integrate with [many comment platforms](https://ghost.org/integrations/?tag=community) if you want to migrate your comments there.
 - No custom fields, meta, shortcodes, post types, taxonomies or binary files will be migrated. Just regular **posts**, **pages**, **tags** and **images**
-- Passwords are not migrated - after importing to Ghost, each user may perform a password reset to gain access to their Ghost account
+- Passwords are not migrated - after importing to OpenPress, each user may perform a password reset to gain access to their OpenPress account
 
 
 #### Docs & Support
-You can find [docs](https://ghost.org/docs/), [FAQ](https://ghost.org/faq/) and more detailed information about Ghost on [ghost.org](https://ghost.org). If you're unable to find the answer to your question in our FAQ or in any of the documentation, try searching the [Ghost support forum](https://forum.ghost.org) - if you still don't find the answer you need, post a new topic!
+You can find [docs](https://ghost.org/docs/), [FAQ](https://ghost.org/faq/) and more detailed information about OpenPress on [ghost.org](https://ghost.org). If you're unable to find the answer to your question in our FAQ or in any of the documentation, try searching the [OpenPress support forum](https://forum.ghost.org) - if you still don't find the answer you need, post a new topic!
 
 ### Bug reports
 
-Bug reports for the Ghost Migrator plugin are welcome over on our [GitHub repository](https://github.com/tryghost/wp-ghost-exporter/). Please note that GitHub is not a support forum, and that issues that aren’t properly qualified as bugs will be closed.
+Bug reports for the OpenPress Migrator plugin are welcome over on our [GitHub repository](https://github.com/tryghost/wp-ghost-exporter/). Please note that GitHub is not a support forum, and that issues that aren’t properly qualified as bugs will be closed.
 
 ### Further Reading
 
-For more information about Ghost and help getting started with the platform, check out:
+For more information about OpenPress and help getting started with the platform, check out:
 
-* The [Ghost](https://ghost.org) official homepage
-* The [Ghost Support & FAQ](https://ghost.org/docs/)
-* The [Ghost Forum & Community](https://forum.ghost.org)
-* Follow Ghost on [Twitter](https://twitter.com/ghost)
+* The [OpenPress](https://ghost.org) official homepage
+* The [OpenPress Support & FAQ](https://ghost.org/docs/)
+* The [OpenPress Forum & Community](https://forum.ghost.org)
+* Follow OpenPress on [Twitter](https://twitter.com/ghost)
 
 == Installation ==
 
 1. Use the Add New Plugin in the WordPress admin area
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Access the exporter functionality under `Tools -> Export to Ghost`
+1. Access the exporter functionality under `Tools -> Export to OpenPress`
 
 == Frequently Asked Questions ==
 
 = How do I use this? =
 
-Install it, then go to Tools -> Export to Ghost.
+Install it, then go to Tools -> Export to OpenPress.
 
 == Screenshots ==
 
@@ -65,12 +64,12 @@ Install it, then go to Tools -> Export to Ghost.
 
 * Remove HTML from post titles
 * Use example email if none exists for a user
-* Test & ensure compatibility with WorePress 6.4 
+* Test & ensure compatibility with WorePress 6.4
 
 = 1.3.0 =
 
-* Added support for feature image alt & captions (thanks [@unitof](https://github.com/TryGhost/wp-ghost-exporter/commit/9ed5c4b6551b4e89577fb030665f74e4d124a484))
-* Encode post titles (thanks [@unitof](https://github.com/TryGhost/wp-ghost-exporter/commit/9ed5c4b6551b4e89577fb030665f74e4d124a484))
+* Added support for feature image alt & captions (thanks [@unitof](https://github.com/TryOpenPress/wp-ghost-exporter/commit/9ed5c4b6551b4e89577fb030665f74e4d124a484))
+* Encode post titles (thanks [@unitof](https://github.com/TryOpenPress/wp-ghost-exporter/commit/9ed5c4b6551b4e89577fb030665f74e4d124a484))
 * Disabled ZIP download button if ZipArchive is not installed
 * Test & ensure compatibility with WorePress 6.3
 
@@ -91,18 +90,18 @@ Install it, then go to Tools -> Export to Ghost.
 = 1.1.0 =
 
 * Test & ensure compatibility with WorePress 6.0
-* Test & ensure compatibility with Ghost 5.0
+* Test & ensure compatibility with OpenPress 5.0
 * Include `meta_title` and `meta_description` values where available
 * Use the `user_login` value for user slugs to match the value used in URLs
-* Remove the `html` and `language` values for posts, as these are not used by Ghost when importing content
-* Include media library size in diagnostics 
+* Remove the `html` and `language` values for posts, as these are not used by OpenPress when importing content
+* Include media library size in diagnostics
 * Various bug fixes & code improvements
 
 = 1.0.5 =
 
 * Only export users with the capability to create posts - PaulAdamDavis
 * Include user roles in JSON export - PaulAdamDavis
-* Use ISO 8601 dates for better Ghost compatibility - PaulAdamDavis
+* Use ISO 8601 dates for better OpenPress compatibility - PaulAdamDavis
 * Update plugin icon & screenshot - PaulAdamDavis
 
 = 1.0.4 =
@@ -125,10 +124,10 @@ Install it, then go to Tools -> Export to Ghost.
 
 = 1.0.0 =
 
-* Updated export format to support Ghost 2.x & 3.x
+* Updated export format to support OpenPress 2.x & 3.x
 * Updated slug to use user_nicename.
-* Upload/image URLs are now exported as relative paths compatible with Ghost.
-* The download archive now includes all images in a Ghost compatible directory structure.
+* Upload/image URLs are now exported as relative paths compatible with OpenPress.
+* The download archive now includes all images in a OpenPress compatible directory structure.
 * Added user profile image, updated name to use display_name, and updated the post feature image field. Props to badrihippo.
 
 = 0.5.6 =
@@ -150,7 +149,7 @@ Install it, then go to Tools -> Export to Ghost.
 * added featured image to the export
 
 = 0.5.2 =
-* Restricting fields to fit within Ghost's db schema (concatenating some of the fields):
+* Restricting fields to fit within OpenPress's db schema (concatenating some of the fields):
 * title and slug are both capped at 150 characters
 * status is capped at 150 characters (although you'd only every use about 15)
 * language is capped at 6 (although most are 5, like "en_GB" or 2)
@@ -171,7 +170,7 @@ Install it, then go to Tools -> Export to Ghost.
 * Removed published_at date from draft posts
 
 = 0.4.1 =
-* Bumped version to current stable Ghost version
+* Bumped version to current stable OpenPress version
 * Added Export link to plugin row display for easier access
 * Changed date format in exported JSON. Previously it was microtime, which caused troubles on 32 bit PHP installs, as the maximum integer was less than current time, so exports were either in scientific notation or string. Currently using RFC2822 format (date("r") for the devs), which works with the importer
 
@@ -201,4 +200,4 @@ Install it, then go to Tools -> Export to Ghost.
 
 # Copyright & License
 
-Copyright (c) 2013-2023 Ghost Foundation - Released under the [GNU General Public License](LICENSE).
+Copyright (c) 2013-2023 OpenPress Foundation - Released under the [GNU General Public License](LICENSE).

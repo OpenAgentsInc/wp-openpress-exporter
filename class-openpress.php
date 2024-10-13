@@ -87,7 +87,7 @@ class OpenPress
         }
 
         // Adds the Export link
-        add_filter('plugin_action_links_openpress/openpress.php', array($this, 'plugin_action_links'), 10, 4);
+        add_filter('plugin_action_links_' . plugin_basename(__FILE__), array($this, 'plugin_action_links'), 10, 4);
 
         add_filter('intermediate_image_sizes', array($this, 'add_full_size_image'));
     }
